@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>CloudVote HUB</title>
+
+        <META HTTP-EQUIV="Refresh" CONTENT="3; URL=http://meridiasswebsite.cloudapp.net/home/phonegaptest/1">
+
+        <meta 
+            http-equiv="Content-Type" 
+            content="text/html; 
+            charset=UTF-8" />
+
+        <meta 
+            name="viewport" 
+            content="width=device-width, initial-scale=1" /> 
+
+        <link 
+            rel="stylesheet" 
+            href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+
+        <link 
+	        rel="stylesheet" 
+	        type="text/css" 
+	        href="css/index.css" />
+
+        <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+
+
+    </head>
+
+    <body
+        onload = "OnBodyLoad()">
+
+        <!-- /page -->
+        <div data-role="page" data-theme="a">
+
+            <!-- /header -->
+	        <div data-role="header">
+                <h1>CloudVOTE</h1>
+	        </div>
+
+	        <!-- /content -->
+            <div data-role="content">	
+
+                <div id="AppRegion">
+                    <center>
+                    <br />
+                    <img
+                        src="./img/logo.png"
+                        width="200" />
+                    <br />
+                    <p id="DeviceNameRegion">Device Name: </p>
+                    <p id="DeviceIDRegion">Device ID: </p>
+                    <br />
+                    <a
+                        id="LaunchCloudVoteAnchorButton"
+                        data-role="button" 
+                        data-icon="arrow-r" 
+                        data-iconpos="right"
+                        href="">
+                        Join Meeting...
+                        </a>
+                    <br />
+                    <p id="AutoClickMessage">(click if not automatically launched)</p>
+                    </center>
+                </div>
+
+                <div id="WebAppRegion">
+                
+                </div>
+
+	        </div>
+
+        </div>
+
+        <!--PhoneGap script-->
+        <script 
+            type="text/javascript" 
+            src="phonegap.js"></script>
+            
+        <!--PlugIn Scripts-->
+        
+        <!--My Scripts-->
+        <script 
+            type="text/javascript" 
+            src="js/index.js"></script>
+
+        <script 
+            type="text/javascript" 
+            src="js/hub.js"></script>
+
+    </body>
+
+</html>
