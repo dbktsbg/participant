@@ -7,9 +7,14 @@ function InitializeHub()
 
 function LaunchParticipantWebApp()
 {
+
     var DeviceID = device.uuid;
     var ARCloudWebAPIAddress = "http://meridiasswebsite.cloudapp.net/Participant/JoinUsingMeridiaDevice";
+
+    jQuery("#DeviceIDRegion").text( "Please wait while starting app for DeviceID: " + DeviceID + "..." );
+
     open(ARCloudWebAPIAddress + "/Participant/JoinUsingMeridiaDevice/" + DeviceID);
+
 }
 
 function SetupToLaunchCloudVoteParticipant() 
